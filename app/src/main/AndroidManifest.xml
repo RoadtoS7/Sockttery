@@ -11,8 +11,7 @@
         android:theme="@style/AppTheme"
         android:name=".Application">
         <activity android:name=".MyPageActivity"></activity>
-        <activity android:name=".MainActivity">
-        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"/>
         <activity android:name=".RewardActivity"></activity>
         <activity android:name=".LoginActivity" />
         <activity android:name=".IntroActivity" />
