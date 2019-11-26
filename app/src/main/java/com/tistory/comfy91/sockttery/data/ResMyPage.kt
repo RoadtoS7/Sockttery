@@ -3,7 +3,7 @@ package com.tistory.comfy91.sockttery.data
 data class ResMyPage (
     val success: Boolean,
     val message: String,
-    val data: MyData
+    val data: MyData?
 )
 
 data class MyData(
@@ -13,3 +13,4 @@ data class MyData(
     val money: String,
     val pay: Int
 )
+

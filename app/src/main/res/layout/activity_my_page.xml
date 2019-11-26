@@ -5,37 +5,102 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.MyPageActivity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="445dp"
+        android:background="@drawable/round_bg_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imgCoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dollar_copy_6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="63dp"
+        />
 
     <TextView
         android:id="@+id/tvId"
         android:text="'아이디'님"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/imgCoin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"
+        />
 
     <TextView
         android:id="@+id/tvMoney"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="원"
-        app:layout_constraintStart_toStartOf="@+id/tvId"
-        app:layout_constraintTop_toBottomOf="@+id/tvId"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvId"
+        android:layout_marginTop="20dp"/>
 
-    <Button
-        android:id="@+id/btnInputMoney"
-        android:text="충전하기"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+    <View
+        android:id="@+id/white_bar"
+        android:layout_width="183dp"
+        android:layout_height="2dp"
+        android:background="@drawable/white_line"
         app:layout_constraintTop_toBottomOf="@id/tvMoney"
-        app:layout_constraintStart_toStartOf="@id/tvMoney"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-    <Button
-        android:id="@+id/btnOutMoney"
-        android:text="출금하기"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        app:layout_constraintTop_toBottomOf="@+id/btnInputMoney"
-        app:layout_constraintStart_toStartOf="@+id/tvMoney"/>
+
+
+
+        <Button
+            android:id="@+id/btnInputMoney"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_green"
+            android:fontFamily="@font/nanum_bold"
+            android:text="충전하기"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/white_bar"
+            app:layout_constraintEnd_toStartOf="@id/btnOutMoney"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+
+
+            />
+
+
+        <Button
+            android:id="@+id/btnOutMoney"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_dialog_confirm"
+            android:fontFamily="@font/nanum_bold"
+            android:text="출금하기"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/btnInputMoney"
+            app:layout_constraintTop_toTopOf="@id/btnInputMoney"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="10dp"
+            />
+    
+    <ImageView
+        android:layout_width="334dp"
+        android:layout_height="368dp"
+        android:background="@drawable/my_page_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnOutMoney"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="44dp"
+
         />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

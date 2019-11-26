@@ -1,5 +1,7 @@
 package com.tistory.comfy91.sockttery.api
 
+import retrofit2.Call
+import retrofit2.Callback
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
@@ -11,4 +13,6 @@ object ServerService {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
     val service : Service = retrofit.create(Service::class.java)
+
+
 }

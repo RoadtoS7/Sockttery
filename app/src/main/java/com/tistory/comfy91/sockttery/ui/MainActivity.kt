@@ -3,6 +3,8 @@ package com.tistory.comfy91.sockttery.ui
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.content.Intent
+import android.net.Uri
+
 import android.os.Bundle
 import android.view.View
 import android.view.animation.BounceInterpolator
@@ -125,4 +127,17 @@ class MainActivity : AppCompatActivity() {
         ty1.interpolator = BounceInterpolator()
         ty1.start()
     }
+
+
+    fun shareWithOtherApp(money: Int, id: String){
+        val text = "${money}원이 ${id}님에게 당첨됐터리 ʕ￫ᴥ￩ʔ Socks will be Lucks, 크리스마스엔 양말로 싹터리!"
+        val imageUri: Uri = Uri.parse("android.resource://"+this@MainActivity.packageName+"/drawable/img_share")
+        val shareIntent : Intent = Intent(Intent.ACTION_SEND)
+        shareIntent.putExtra(Intent.EXTRA_TEXT, text)
+        shareIntent.putExtra(Intent.EXTRA_STREAM, imageUri)
+        shareIntent.setType("image/jpeg")
+        shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        startActivity(Intent.createChooser(shareIntent, "send"));
+    }
+
 }
