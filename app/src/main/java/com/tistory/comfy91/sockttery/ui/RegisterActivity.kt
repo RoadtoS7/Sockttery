@@ -26,8 +26,10 @@ class RegisterActivity : AppCompatActivity() {
     }
     fun postRegisterResponse(user_id: String, user_password: String) {
         val intent: Intent = Intent()
+        //intent.putExtra("login", user)
         setResult(Activity.RESULT_OK, intent)
         //값 넘기기
+
         finish()
     }
 }
