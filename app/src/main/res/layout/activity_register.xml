@@ -5,63 +5,63 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#d5bea6"
-    tools:context=".ui.LoginActivity">
-
+    tools:context=".ui.RegisterActivity">
 
     <EditText
         android:id="@+id/edt_id"
         android:layout_width="267dp"
         android:layout_height="37dp"
         android:layout_marginTop="45dp"
-        android:paddingLeft="16dp"
+        android:background="@drawable/primary_login_border"
         android:ems="10"
         android:hint="아이디를 입력해주세요"
         android:inputType="textPersonName"
+        android:paddingLeft="16dp"
         android:textColorHint="#9b9b9b"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        android:background="@drawable/primary_login_border"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
         android:id="@+id/edt_password"
         android:layout_width="267dp"
         android:layout_height="37dp"
         android:layout_marginTop="4dp"
+        android:background="@drawable/primary_login_border"
         android:ems="10"
-        android:paddingLeft="16dp"
         android:hint="비밀번호를 입력해주세요"
         android:inputType="textPassword"
+        android:paddingLeft="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:textColorHint="#9b9b9b"
-        android:background="@drawable/primary_login_border"/>
+        tools:textColorHint="#9b9b9b" />
 
     <Button
-        android:id="@+id/btn_login"
+        android:id="@+id/btn_ok"
         android:layout_width="267dp"
         android:layout_height="44dp"
         android:layout_marginTop="20dp"
-        android:textSize="17sp"
-        android:text="로그인"
         android:background="@drawable/primary_login_button"
+        android:text="로그인"
         android:textColor="@color/white"
+        android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edt_password" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_register" />
 
-    <TextView
-        android:textColor="@color/white"
+    <androidx.appcompat.widget.AppCompatCheckBox
         android:id="@+id/btn_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
+        android:text="약관에 동의하십니까?"
+        android:textColor="@color/white"
         android:textSize="13sp"
-        android:text="회원가입해서 삭터리 진행하기"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -101,11 +101,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="7dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
         android:text="PASSWORD"
-        android:textSize="18sp"
         android:textColor="@color/white"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_id" />
 
