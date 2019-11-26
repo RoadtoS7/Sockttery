@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPageActivity">
+
+    <TextView
+        android:id="@+id/tvId"
+        android:text="'아이디'님"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvMoney"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="원"
+        app:layout_constraintStart_toStartOf="@+id/tvId"
+        app:layout_constraintTop_toBottomOf="@+id/tvId"/>
+
+    <Button
+        android:id="@+id/btnInputMoney"
+        android:text="충전하기"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toBottomOf="@id/tvMoney"
+        app:layout_constraintStart_toStartOf="@id/tvMoney"/>
+
+    <Button
+        android:id="@+id/btnOutMoney"
+        android:text="출금하기"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnInputMoney"
+        app:layout_constraintStart_toStartOf="@+id/tvMoney"/>
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
