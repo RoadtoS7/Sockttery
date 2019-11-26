@@ -1,9 +1,10 @@
-package com.tistory.comfy91.sockttery
+package com.tistory.comfy91.sockttery.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.tistory.comfy91.sockttery.R
 import kotlinx.android.synthetic.main.activity_splash.*
 
 class SplashActivity : AppCompatActivity() {

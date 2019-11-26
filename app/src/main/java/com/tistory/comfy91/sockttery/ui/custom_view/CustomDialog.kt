@@ -1,4 +1,4 @@
-package com.tistory.comfy91.sockttery.custom_view
+package com.tistory.comfy91.sockttery.ui.custom_view
 
 import android.app.Dialog
 import android.content.Context

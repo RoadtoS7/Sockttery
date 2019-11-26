@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".RewardActivity">
+    tools:context=".ui.RewardActivity">
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie"
         app:lottie_autoPlay="true"

@@ -1,4 +1,4 @@
-package com.tistory.comfy91.sockttery
+package com.tistory.comfy91.sockttery.data.preferences
 
 import android.content.Context
 import android.content.SharedPreferences

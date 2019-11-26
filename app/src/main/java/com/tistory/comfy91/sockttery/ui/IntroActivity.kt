@@ -1,8 +1,9 @@
-package com.tistory.comfy91.sockttery
+package com.tistory.comfy91.sockttery.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.tistory.comfy91.sockttery.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class IntroActivity : AppCompatActivity() {
@@ -14,7 +15,7 @@ class IntroActivity : AppCompatActivity() {
     }
     private fun init(){
         layoutMain.setOnClickListener{
-            val intent = Intent(this,LoginActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }

@@ -1,7 +1,8 @@
-package com.tistory.comfy91.sockttery
+package com.tistory.comfy91.sockttery.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.tistory.comfy91.sockttery.R
 import kotlinx.android.synthetic.main.activity_reward.*
 
 

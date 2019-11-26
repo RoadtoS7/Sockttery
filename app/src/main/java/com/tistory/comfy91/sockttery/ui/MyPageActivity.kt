@@ -1,13 +1,13 @@
-package com.tistory.comfy91.sockttery
+package com.tistory.comfy91.sockttery.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
-import kotlinx.android.synthetic.main.activity_my_page.*
+import com.tistory.comfy91.sockttery.data.preferences.Application
+import com.tistory.comfy91.sockttery.R
 
 class MyPageActivity : AppCompatActivity() {
     private val TAG = javaClass.simpleName
