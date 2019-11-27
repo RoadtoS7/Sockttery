@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.bumptech.glide.Glide
 import com.tistory.comfy91.sockttery.R
 import kotlinx.android.synthetic.main.activity_splash.*
 
@@ -22,9 +23,7 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
-        splash_img.setAnimation("snow.json")
-        splash_img.loop(true)
-        splash_img.playAnimation()
+        Glide.with(this).load(R.drawable.splash).into(splash_img)
         mDelayHandler = Handler()
 
         //Navigate with delay
