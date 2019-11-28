@@ -12,11 +12,14 @@
         android:layout_height="wrap_content"
         android:textSize="17dp"
         android:textColor="@color/charcoal_grey"
-        android:fontFamily="@font/nanum_bold"
+        android:fontFamily="@font/nanumgothic_bold"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
         />
+    
+
 
     <ImageView
         android:id="@+id/imgDialog"
@@ -30,14 +33,17 @@
 
     <EditText
         android:id="@+id/edtMoney"
-        android:layout_width="match_parent"
+        android:layout_width="106dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf = "@id/imgDialog"
-        android:layout_marginStart="51dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:hint="금액을 입력해주세요."/>
+        android:hint="금액을 입력해주세요."
+        android:background="@android:color/transparent"/>
+
     <View
         android:id="@+id/underLine"
         android:layout_width="106dp"
@@ -45,6 +51,7 @@
         android:background="@drawable/red_line"
         app:layout_constraintStart_toStartOf="@id/edtMoney"
         app:layout_constraintTop_toBottomOf="@id/edtMoney"
+        app:layout_constraintEnd_toEndOf="@id/edtMoney"
         />
 
 
@@ -71,6 +78,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp"
         android:background="@drawable/custom_dialog_confirm"
+        android:textColor="@color/white"
         />
         />
 

@@ -1,6 +1,9 @@
 package com.tistory.comfy91.sockttery.api
 
 import com.tistory.comfy91.sockttery.data.*
+import com.tistory.comfy91.sockttery.data.charge.ResCharge
+import com.tistory.comfy91.sockttery.data.get_reward.ResGetReward
+import com.tistory.comfy91.sockttery.data.my_page.ResMyPage
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -31,7 +34,8 @@ interface Service{
     // 추첨된 사람 돈 가져가기
     @GET("/lottos/{userIdx}/getReward/{reward}")
     fun reqGetReward(
-        @Path("userIdx") userIdx: String
+        @Path("userIdx") userIdx: String,
+        @Path("reward") reward: String
     ): Call<ResGetReward>
 
 

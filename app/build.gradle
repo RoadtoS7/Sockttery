@@ -48,6 +48,8 @@ dependencies {
     //Retrofit 에서 Gson 을 사용하기 위한 라이브러리
     implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
 
+    // lottie
     implementation 'com.airbnb.android:lottie:2.7.0'
+
 
 }

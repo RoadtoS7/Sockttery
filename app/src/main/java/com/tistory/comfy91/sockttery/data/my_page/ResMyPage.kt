@@ -1,4 +1,4 @@
-package com.tistory.comfy91.sockttery.data
+package com.tistory.comfy91.sockttery.data.my_page
 
 data class ResMyPage (
     val success: Boolean,

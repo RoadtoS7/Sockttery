@@ -26,9 +26,10 @@ class LoginActivity : AppCompatActivity() {
             if (edtId == "") edt_id.requestFocus()
             else if(edtPw == "") edt_password.requestFocus()
             else {
-//                val intent: Intent = Intent(this, MainActivity::class.java)
-//                startActivity(intent)
-//                finish()
+                val intent: Intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+                finish()
+                Log.d(this::class.java.name, "Before Call")
                 val call: Call<ResSignIn> = ServerService.service.resSignIn(edtId, edtPw)
                 call.enqueue(
                     object : Callback<ResSignIn> {
@@ -51,6 +52,7 @@ class LoginActivity : AppCompatActivity() {
                             }
                             else {
                                 Toast.makeText(this@LoginActivity, "Login Failed", Toast.LENGTH_LONG).show()
+
                             }
                         }
                     }

@@ -5,6 +5,8 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.text.TextUtils
+import android.util.Log
 
 import android.view.View
 import android.widget.Button
@@ -47,22 +49,16 @@ class CustomDialog(context: Context, title: String, balance: String, imgId: Int,
 
         txtDialogTitle.setText(strTitle)
         imgDialog.setImageResource(intImgId)
-        txtBalance.setText(strBalance)
+        txtBalance.setText("잔액 : ${strBalance}원")
         btnConfirm.setText(strConfirm)
-
+        btnConfirm.setBackgroundResource(intBtnNum)
+        underLine.setBackgroundResource(intLineColor)
+        btnConfirm.setOnClickListener(setListener)
 
     } // end onCretae()
 
-    fun setBtnBackground(backId: Int){
-        btnConfirm.setBackgroundResource(backId)
-    }
-
-    fun setUnderLineColor(underlineColor: Int){
-        underLine.setBackgroundResource(underlineColor)
-    }
-
-    fun setListener(listener: View.OnClickListener){
-        btnConfirm.setOnClickListener(listener)
+    fun getEdtMoneyText(): String? {
+        return edtMoney.text.toString()
     }
 
 
